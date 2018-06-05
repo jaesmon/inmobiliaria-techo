@@ -1,6 +1,5 @@
 # Dockerfile
-FROM node:6.9
-MAINTAINER IntegracionContinua
+FROM node:8.9
 LABEL authors="IntegracionContinua"
 
 # Agregamos un usuario
