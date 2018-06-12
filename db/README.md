@@ -1,3 +1,1 @@
-Prueba  ddd
-ddddd
-ddd
+Estructura de la base dde datos:
