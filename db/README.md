@@ -1,1 +1,1 @@
-Estructura de la base dde datos:
+Estructura de la base de datos:
