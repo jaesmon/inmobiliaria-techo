@@ -20,7 +20,11 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -44,5 +48,18 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaholguin/inmobiliaria-techo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaholguin/inmobiliaria-techo/issues"
+  },
+  "homepage": "https://github.com/jaholguin/inmobiliaria-techo#readme"
 }
