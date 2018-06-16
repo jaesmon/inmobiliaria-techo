@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Inject, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  title = 'POST Request';
+	username: string;
+	password: string;
+	results = [];
+  userService: any;
 
-  ngOnInit() {
-  }
+  constructor(@Inject(UserService) userService) {
+	  this.userService = userService;
+	  this.getUsers();
+}
+
+ngOnInit() {
+  this.results = [];
+  this.getUsers();
+}
+
+getUsers() {
+  this.userService.getUsers()
+  .map(res => res.json())
+  .subscribe(results => this.results = results);
+}
+
+addUser(username, password) {
+  var data = {
+    username: username,
+    password: password
+  };
+
+  var result = this.userService.addUser(data)
+    .subscribe(res => {
+      if(res.success == "true") {
+        this.results.unshift(data);
+      }
+      this.password = "";
+      this.username = "";
+      console.log(res);
+    });
+}
 
 }
