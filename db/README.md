@@ -1,1 +1,1 @@
-Estructura de la base de datos:
+Estructura de la base de datos en node.js:
