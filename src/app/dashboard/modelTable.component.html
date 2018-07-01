@@ -2,7 +2,7 @@
 <!--{{getModels()|json}}-->
 <div class="row op animated fadeInRight">
   <div class="col-sm-4">
-    <span>page size:&nbsp;&nbsp;</span>
+    <span>Registros por pagina:&nbsp;&nbsp;</span>
     <select class="form-control pagesize" [value]="limit"
             (change)="changePageSize($event.target.value)"
     >
@@ -13,13 +13,13 @@
     </select>
   </div>
   <div class="col-sm-6">
-    <span>Search:&nbsp;&nbsp;</span>
+    <span>Busqueda:&nbsp;&nbsp;</span>
 
     <input type="text" class="form-control search" [(ngModel)]="filter" placeholder="{{searchPlaceHolder}}">
   </div>
   <div class="col-sm-2">
     <button type="button" class="btn btn-success" routerLink="/dashboard/{{model}}/create">
-      <i class="fa fa-plus"></i> Create</button>
+      <i class="fa fa-plus"></i> Ingresar propiedad</button>
   </div>
 </div>
 <div class="panel panel-default animated fadeInRight">
@@ -69,12 +69,12 @@
         <table class="table table-bordered table-hover">
           <thead>
           <tr>
-            <th>Poster</th>
-            <th>Name</th>
-            <th>Author</th>
-            <th>CreatedAt</th>
-            <th>Note</th>
-            <th>Operation</th>
+            <th>Foto</th>
+            <th>Ubicación</th>
+            <th>Descipsión</th>
+            <th>Disponibilidad</th>
+            <th>Nota</th>
+            <th>Precio</th>
           </tr>
           </thead>
           <tbody>
