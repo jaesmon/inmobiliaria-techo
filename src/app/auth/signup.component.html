@@ -1,7 +1,7 @@
 <div class="is-auth">
   <form novalidate #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
     <div class="form-heading">
-      <h1>TECHO INMOBILIARIA</h1>
+      <h1>INMOBILIARIA TECHO</h1>
     </div>
     <div class="form-body">
       <div class="form-group has-feedback">
@@ -13,10 +13,10 @@
         <span class="fa fa-lock form-control-feedback text-muted"></span>
       </div>
       <button [disabled]="requesting" type="submit" class="btn btn-block btn-primary mt-lg">
-        Create account <i *ngIf="requesting" class="fa fa-spinner fa-pulse fa-fw"></i>
+        Crear Cuenta <i *ngIf="requesting" class="fa fa-spinner fa-pulse fa-fw"></i>
       </button>
-      <p class="pt-lg text-center">Have an account?</p>
-      <a routerLink="/signin" class="btn btn-block btn-default">Login</a>
+      <p class="pt-lg text-center">Ya tiene una cuenta?</p>
+      <a routerLink="/signin" class="btn btn-block btn-default">Ingresar</a>
       <p *ngIf="errorMessage" class="pt-lg text-center text-danger">
         {{errorMessage}}
       </p>
