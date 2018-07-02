@@ -10,7 +10,6 @@ branches:
   only:
   - master
   - Login-FrontPrincipal
-  - gh-pages     # test the gh-pages branch
   - /.*/ 
 
 
