@@ -5,6 +5,10 @@ node_js:
 install:
   - npm install
 script:
-   - ng build --prod  
+   - ng build --prod
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"   
 
 
