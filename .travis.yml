@@ -9,13 +9,12 @@ install:
 script:
    - ng build --prod
 before_script:
-  - docker pull jenkins/jenkins
+  - docker ps
 script:
-  - docker run -it -p 8084:80 jenkins/jenkins
+  - docker ps
 branches:
   only:
   - master
-  - Login-FrontPrincipal
-  - /.*/ 
+ 
 
 
