@@ -9,9 +9,9 @@ install:
 script:
    - ng build --prod
 before_script:
-  - docker pull gizra/drupal-lamp
+  - docker pull jenkins/jenkins
 script:
-  - docker run -it -p 8080:80 gizra/drupal-lamp  
+  - docker run -it -p 8084:80 jenkins/jenkins
 branches:
   only:
   - master
