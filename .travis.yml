@@ -6,7 +6,5 @@ install:
   - npm install
 script:
    - ng build --prod  
-branches:
-only:
-  - master # will only build for master branch commits
+
 
