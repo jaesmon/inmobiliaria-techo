@@ -12,3 +12,7 @@ before_script:
   - bower install
   - gulp build
   - gulp style
+  branches:
+  only:
+      - gh-pages
+      - /.*/
